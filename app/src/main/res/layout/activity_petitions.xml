@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackgroud"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:logo="@drawable/eltaitaname_white"
+        />
+    <TextView
+        android:id="@+id/textview_title_petition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="@string/pedido"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="6dp">
+        <TextView
+            android:id="@+id/textview_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="@string/petition"/>
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/RaisedButtonDark"
+        android:gravity="center"
+        android:onClick="confirm"
+        android:text="@string/enviar"/>
+    <GridView
+        android:id="@+id/grid_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_spacing"
+        android:numColumns="2"
+        android:padding="@dimen/grid_spacing"
+        android:verticalSpacing="@dimen/grid_spacing" />
+
+
+</LinearLayout>

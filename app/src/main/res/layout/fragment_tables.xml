@@ -1,0 +1,20 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackgroud"
+    tools:context="com.grupodetec.eltaita.View.TablesFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <GridView
+        android:id="@+id/grid_tables"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_spacing"
+        android:numColumns="4"
+        android:padding="@dimen/grid_spacing"
+        android:verticalSpacing="@dimen/grid_spacing" />
+
+</android.support.constraint.ConstraintLayout>
